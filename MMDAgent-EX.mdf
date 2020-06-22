@@ -1,0 +1,177 @@
+
+####################################################
+#
+#  MDF options
+#)
+#  the following values are default values
+#
+####################################################
+#
+# all the "key=value" values are also stored to KeyValue
+# you can also set any KeyValues in .mdf file.
+#
+####################################################
+
+### App
+
+# file name to save all logs (leave blank to disable) (desktop)
+log_file=mylog.txt
+
+# exclude_[plugin_name]=yes will disable plugin
+# example:
+#  exclude_Plugin_Audio=yes
+#  exclude_Plugin_ErrorBlock=yes
+#  exclude_Plugin_Julius=yes
+#  exclude_Plugin_Open_JTalk=yes
+#  exclude_Plugin_Network=yes
+#  exclude_Plugin_Remote=yes
+
+
+### View
+
+# window size (desktop)
+window_size=600,600
+
+# start with full screen mode (desktop)
+full_screen=false
+
+# MSAA (multi-sampling anti alias) intensity (desktop)
+max_multi_sampling=4
+
+# show fps text at left-top corner
+show_fps=true
+
+# display model comment for this period in sec.
+display_comment_time=5.0
+
+
+### Scene
+
+# maximum number of models in the scene
+max_num_model=10
+
+# floor/background stage size in (x,z,y)
+stage_size=25.0,25.0,40.0
+
+# campus color
+campus_color=0.0,0.0,0.2
+
+# do shadow rendering by default
+use_shadow=true
+
+# physics simulation fps (lower value for light-weight simulation)
+bullet_fps=120
+
+# insert physics on floor when true
+bullet_floor=true
+
+# motion delay/advance timing adjuster in sec
+motion_adjust_time=0.0
+
+# lipsync motion priority
+lipsync_priority=100.0
+
+
+### Camera at startup
+
+# camera rotation
+camera_rotation=0.0,0.0,0.0
+# camera position
+camera_transition=0.0,13.0,0.0
+# camera distance
+camera_distance=100.0
+# camera fovy
+camera_fovy=16.0
+
+
+### Bullet Physics
+
+# gravity factor (10.0 for compatibility with MMD)
+gravity_factor=10.0
+
+
+### Rendering
+
+# use cartoon rendering
+use_cartoon_rendering=true
+
+# use MMD-like cartoon
+use_mmd_like_cartoon=true
+
+# default edge width
+cartoon_edge_width=0.35
+
+# edge width changing step by key
+cartoon_edge_step=1.2
+
+# edge color for selected models
+cartoon_edge_selected_color=1.0,0.0,0.0,1.0
+
+# log display size (x,y) in letters
+log_size=80,30
+
+# log display position (x,y,z)
+log_position=-17.5,3.0,-20.0
+
+# log display scale
+log_scale=1.0
+
+# light direction default (x,y,z,w)
+light_direction=0.5,1.0,0.5,0.0
+
+# light intensity
+light_intensity=0.6
+
+# default light color
+light_color=1.0,1.0,1.0
+
+
+### User interface
+
+# mouse/key sensitivity for view rotation
+rotate_step=4.5
+
+# mouse/key sensitivity for view transition
+translate_step=0.5
+
+# mouse/key sensitivity for camera distance change
+distance_step=4.0
+
+# mouse/key sensitivity for camera fovy change
+fovy_step=1.0
+
+
+### Shadow mapping
+
+# do self-shadow mapping (heavy) by default
+use_shadow_mapping=false
+
+# texture size for shadow mapping
+shadow_mapping_texture_size=1024
+
+# shadow density on model for shadow mapping
+shadow_mapping_self_density=1.0
+
+# shadow density on floor for shadow mapping
+shadow_mapping_floor_density=0.5
+
+# switch shadow rendering order
+shadow_mapping_light_first=true
+
+
+
+
+# configuration in .mdf to enable client function
+Plugin_Remote_EnableClient=true
+Plugin_Remote_Hostname=localhost
+Plugin_Remote_Port=39392
+
+# configuration in .mdf to enable server function
+#Plugin_Remote_EnableServer=true
+#Plugin_Remote_Port=39392
+
+# configuration in .mdf to enable sending all raw log
+Plugin_Remote_AllLog=true
+
+
+############################################################### end of MDF_OPTIONS.txt
